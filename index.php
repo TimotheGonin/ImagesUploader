@@ -15,6 +15,7 @@
 
                 $address = 'uploads/'.time().rand().rand().'.'.$extensionImage;
                 move_uploaded_file($_FILES['image']['tmp_name'], $address);
+                echo 'Success';
                 $error = 0;
             }
         }
@@ -54,7 +55,12 @@
         </form>
         <?php
             if(isset($error) && $error == 0){
-                echo '<div id="presentation-picture"><img src="'.$address.'" id="upImage"/></div>';
+                echo '<div id="presentation-picture"><img src="'.$address.'" id="upImage"/><br/ >
+                
+                <input type="text" value="http://127.0.0.1/imagesUploader/'.$address.'" /></div>
+                ';
+            } else if(isset($error) && $error == 1){
+                echo'Votre image ne peut pas être envoyée. Vérifiez son extension et sa taille (maximum à 3mo).';
             }
         ?>
     </section>
