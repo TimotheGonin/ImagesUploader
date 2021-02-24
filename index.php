@@ -52,6 +52,11 @@
                 </tbody>
             </table>
         </form>
+        <?php
+            if(isset($error) && $error == 0){
+                echo '<div id="presentation-picture"><img src="'.$address.'" id="upImage"/></div>';
+            }
+        ?>
     </section>
 </body>
 </html>

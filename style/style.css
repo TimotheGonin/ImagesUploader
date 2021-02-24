@@ -1,45 +1,50 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/*HEADER*/
-
-header {
-    text-align: center;
-    padding: 80px 0;
-    background-color: rgb(92, 138, 224);
-    color: white;
-    text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
-}
-
-
-/*FORM*/
-
-table {
-    margin: auto;
-    text-align: center;
-    padding: 40px 0;
-}
-
-th,
-td {
-    padding: 20px 0;
-}
-
-input,
-button {
-    cursor: pointer;
-}
-
-button {
-    width: 30%;
-    padding: 5px 5px;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 1px solid #000000;
-    background-color: rgb(92, 138, 224);
-    color: white;
-    font-weight: bold;
-}
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /*HEADER*/
+    
+    header {
+        text-align: center;
+        padding: 80px 0;
+        background-color: rgb(92, 138, 224);
+        color: white;
+        text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+    }
+    /*FORM*/
+    
+    table {
+        margin: auto;
+        text-align: center;
+        padding: 40px 0;
+    }
+    
+    th,
+    td {
+        padding: 20px 0;
+    }
+    
+    input,
+    button {
+        cursor: pointer;
+    }
+    
+    button {
+        width: 30%;
+        padding: 5px 5px;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 1px solid #000000;
+        background-color: rgb(92, 138, 224);
+        color: white;
+        font-weight: bold;
+    }
+    /*UPLOADED IMAGE*/
+    
+    #presentation-picture {
+        text-align: center;
+    }
+    
+    #upImage {
+        max-width: 400px;
+    }
